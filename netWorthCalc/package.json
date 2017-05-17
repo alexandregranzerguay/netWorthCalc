@@ -1,0 +1,9 @@
+{
+  "name": "net-worth-calc",
+  "version": "0.0.0",
+  "description": "netWorthCalc",
+  "main": "server.js",
+  "author": {
+    "name": "AGranzerGuay"
+  }
+}

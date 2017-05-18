@@ -1,8 +1,15 @@
 'use strict';
-var http = require('http');
-var port = process.env.PORT || 1337;
+var express = require('express');
+var app = express();
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+const port = 3000;
+
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/public/index.html');
+});
+
+app.use('/js', express.static(__dirname + '/public/js'));
+
+app.listen(port, function(){
+    console.log(`Static files available at http://localhost:${port}/`);
+});

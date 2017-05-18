@@ -1,0 +1,2 @@
+C:\Users\AGranzerGuay\netWorthCalc\netWorthCalc\obj\Debug\netWorthCalc.njsprojResolveAssemblyReference.cache
+C:\Users\AGranzerGuay\netWorthCalc\netWorthCalc\bin\Microsoft.NodejsTools.WebRole.dll

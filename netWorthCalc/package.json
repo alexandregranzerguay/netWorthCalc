@@ -1,9 +1,19 @@
 {
   "name": "net-worth-calc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "netWorthCalc",
   "main": "server.js",
   "author": {
     "name": "AGranzerGuay"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.15.3",
+    "express-stormpath": "^3.2.0",
+    "forms": "^1.3.0",
+    "jade": "^1.11.0",
+    "xtend": "^4.0.1"
   }
 }

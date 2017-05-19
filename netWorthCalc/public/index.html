@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html ng-app="ic">
+<html>
 <head>
     <meta charset="utf-8" />
     <title>Net Worth Calculator</title>
@@ -8,19 +8,22 @@
 </head>
 <body>
     <h1>Let me tell you how much you are worth on the market</h1>
-    <div ng-controller="informationController">
-        <h1>Random count {{randomCount}}</h1>
-<!--             <ul>
-                <li np-repeat="data in datas">
-                    {{data.value}}
-                </li>
-            </ul>
-            <form ng-submit="createData()">
-                <input type="text" placeholder="Current Debt" ng-model="debtVal"/>
-                <button type="submit">Add</button>
-            </form> -->
+    <div ng-app='ic'>
+      <div ng-controller="Ctrl">
+        <form ng-submit="calcData()">
+            <li>Current Debt: <input type="text" ng-change="changePrice()" ng-model="debt"/> </li>
+            <li>Age: <input type="text" ng-change="changePrice()" ng-model="age"/> </li>
+            <li>University: <input type="text" ng-change="changePrice()" ng-model="uni"/>  </li>   
+            <li>Years to graduate: <input type="text" ng-change="changePrice()" ng-model="yrsgrad"/>  </li>
+            <li>Years to payback debt: <input type="text" ng-model="yrspay"/>  <br/><br/></li>
+            <li>Residency location: <input type="text" ng-change="changeTotalPrice()" ng-model="res"/>  </li>
+            <li><input type="submit"></li>
+        </form>
+        <p>{{totalValue}}</p>
+      </div>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script type="text/javascript" src="/js/controllers/ic.js"></script>
+    <script type="text/javascript" src="/js/controllers/controller.js"></script>
+<!--     <script type="text/javascript" src="/js/controllers/nwCalc.js"></script> -->
 </body>
 </html>
